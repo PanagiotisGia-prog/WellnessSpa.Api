@@ -5,7 +5,7 @@ using WellnessSpa.Api.Model;
 
 namespace WellnessSpa.Api.Endpoint
 {
-    static class EndPointWellness
+    public static class EndPointWellness
     {
         const string EndpointName = "Wellness";
         
