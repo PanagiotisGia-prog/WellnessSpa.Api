@@ -1,0 +1,38 @@
+###
+GET http://localhost:5052/wellness
+
+###
+GET http://localhost:5052/wellness/1
+
+###
+POST http://localhost:5052/wellness
+Content-Type: application/json
+
+{
+    "name": "Paraskeuas Altis",
+    "treatmentId": 1,
+    "pressureId": 2,
+    "isCoupled": true,
+    "bookedDay": "2026-12-15T12:30:00"
+}
+
+###
+PUT http://localhost:5052/wellness/2
+Content-Type: application/json
+
+{
+    "name": "Paraskeuas Altis",
+    "treatmentId": 10,
+    "pressureId": 2,
+    "isCoupled": true,
+    "bookedDay": "2026-12-20T13:30:00"
+}
+
+###
+DELETE http://localhost:5052/wellness/1
+
+###
+GET http://localhost:5052/treatments
+
+###
+GET http://localhost:5052/pressures
